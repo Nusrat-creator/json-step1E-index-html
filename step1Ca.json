@@ -1,0 +1,9 @@
+{
+  "alcohol_blood_alcohol_concentration_limit_g_dl": 0.05,
+  "does_driver_have_alcohol_in_their_system": false,
+  "driver_blood_alcohol_concentration_g_dl": 0.0,
+  "alcohol_test_administered": true,
+  "alcohol_test_result": "negative",
+  "hours_since_last_alcohol_consumption": 48,
+  "medication_impairment_present": false
+}

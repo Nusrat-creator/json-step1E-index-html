@@ -1,0 +1,11 @@
+
+[{"weather_id":1,"weather":"sunny"},
+{"weather_id":2,"weather":"cloudy"},
+{"weather_id":3,"weather":"rainy"},
+{"weather_id":4,"weather":"snowy"},
+{"weather_id":5,"weather":"stormy"},
+{"weather_id":6,"weather":"foggy"},
+{"weather_id":7,"weather":"windy"},
+{"weather_id":8,"weather":"hazy"},
+{"weather_id":9,"weather":"overcast"},
+{"weather_id":10,"weather":"drizzle"}]

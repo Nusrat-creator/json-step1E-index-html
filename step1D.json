@@ -1,0 +1,19 @@
+{
+  "driving_conditions": [
+    { "identifier": "weather", "value": "rainy", "weather_id": 3 },
+    { "identifier": "traffic_density", "value": "heavy" },
+    { "identifier": "road_surface", "value": "wet" },
+    { "identifier": "visibility", "value": "low" },
+    { "identifier": "time_of_day", "value": "night" },
+    { "identifier": "driver_alcohol_in_system", "value": false },
+    { "identifier": "driver_bac_g_dl", "value": 0.0 },
+    { "identifier": "driver_bac_limit_g_dl", "value": 0.05 },
+    { "identifier": "driver_speed_tickets", "value": 2 },
+    { "identifier": "driver_red_light_violations", "value": 1 },
+    { "identifier": "driver_dui_offenses", "value": 0 },
+    { "identifier": "driver_penalty_points", "value": 4 },
+    { "identifier": "driver_years_of_experience", "value": 5 },
+    { "identifier": "driver_license_class", "value": "B" },
+    { "identifier": "driver_night_experience_hours", "value": 850 }
+  ]
+}

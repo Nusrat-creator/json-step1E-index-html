@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driving Experiment Data</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; background: #f8f9fa; color: #212529; }
+    .card { background: #ffffff; border: 1px solid #dee2e6; border-radius: 8px;
+            padding: 1rem 1.5rem; max-width: 46rem; }
+    code { background: #e9ecef; padding: 0.1rem 0.35rem; border-radius: 4px; }
+    ul { line-height: 1.7; }
+  </style>
+</head>
+<body>
+  <h1>Driving Experiment Data</h1>
+  <div class="card">
+    <p>
+      The JSON data has been successfully assigned to JavaScript variables.
+      Please open your Browser Developer Tools (Press F12 on Linux) and
+      navigate to the Console tab to view the output.
+    </p>
+    <p>Loaded datasets:</p>
+    <ul>
+      <li><code>step1A</code> – drive record (trip)</li>
+      <li><code>step1B</code> – weather lookup table</li>
+      <li><code>step1Ca</code> – alcohol profile</li>
+      <li><code>step1Cb</code> – violation history</li>
+      <li><code>step1Cc</code> – experience profile</li>
+      <li><code>step1D</code> – driving conditions</li>
+    </ul>
+  </div>
+
+  <script>
+    const step1A = {
+"date": "2023-06-15",
+"starting_time": "08:30",
+"arrival_time": "12:45",
+"kilometres_travelled": 252
+};
+    const step1B = [
+      { "weather_id": 1,  "weather": "sunny"    },
+      { "weather_id": 2,  "weather": "cloudy"   },
+      { "weather_id": 3,  "weather": "rainy"    },
+      { "weather_id": 4,  "weather": "snowy"    },
+      { "weather_id": 5,  "weather": "stormy"   },
+      { "weather_id": 6,  "weather": "foggy"    },
+      { "weather_id": 7,  "weather": "windy"    },
+      { "weather_id": 8,  "weather": "hazy"     },
+      { "weather_id": 9,  "weather": "overcast" },
+      { "weather_id": 10, "weather": "drizzle"  }
+    ];
+    const step1Ca = {
+      "alcohol_blood_alcohol_concentration_limit_g_dl": 0.05,
+      "does_driver_have_alcohol_in_their_system": false,
+      "driver_blood_alcohol_concentration_g_dl": 0.0,
+      "alcohol_test_administered": true,
+      "alcohol_test_result": "negative",
+      "hours_since_last_alcohol_consumption": 48,
+      "medication_impairment_present": false
+    };
+    const step1Cb = {
+      "number_of_speed_tickets": 2,
+      "number_of_red_light_violations": 1,
+      "number_of_dui_offenses": 0,
+      "most_recent_speed_ticket_date": "2026-04-12",
+      "current_penalty_points": 4,
+      "speed_tickets_last_12_months": 1
+    };
+    const step1Cc = {
+      "years_of_driving_experience": 5,
+      "license_class": "B",
+      "license_issue_date": "2021-06-15",
+      "defensive_driving_course_completed": true,
+      "average_annual_distance_km": 12000,
+      "night_driving_experience_hours": 850
+    };
+    const step1D = {
+      "driving_conditions": [
+        { "identifier": "weather",                      "value": "rainy", "weather_id": 3 },
+        { "identifier": "traffic_density",              "value": "heavy" },
+        { "identifier": "road_surface",                 "value": "wet"   },
+        { "identifier": "visibility",                   "value": "low"   },
+        { "identifier": "time_of_day",                  "value": "night" },
+        { "identifier": "driver_alcohol_in_system",     "value": false   },
+        { "identifier": "driver_bac_g_dl",              "value": 0.0     },
+        { "identifier": "driver_bac_limit_g_dl",        "value": 0.05    },
+        { "identifier": "driver_speed_tickets",         "value": 2       },
+        { "identifier": "driver_red_light_violations",  "value": 1       },
+        { "identifier": "driver_dui_offenses",          "value": 0       },
+        { "identifier": "driver_penalty_points",        "value": 4       },
+        { "identifier": "driver_years_of_experience",   "value": 5       },
+        { "identifier": "driver_license_class",         "value": "B"     },
+        { "identifier": "driver_night_experience_hours","value": 850     }
+      ]
+    };
+
+    console.log("step1A (drive record):", step1A);
+    console.log("step1B (weather lookup):", step1B);
+    console.table(step1B);
+    console.log("step1Ca (alcohol profile):", step1Ca);
+    console.log("step1Cb (violation history):", step1Cb);
+    console.log("step1Cc (experience profile):", step1Cc);
+    console.log("step1D (driving conditions):", step1D);
+    console.table(step1D.driving_conditions);
+  </script>
+</body>
+</html>
